@@ -1,0 +1,95 @@
+body,
+.mui-body {
+  background-color: #f44336;
+  font-size: 15px;
+  
+  
+}
+
+.mui-container,
+.mui-container-fixed {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+}
+h3{
+	color:white;
+}
+#content-wrapper h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+
+#content-wrapper > tbody > tr > td {
+  padding-bottom: 15px;
+  
+}
+
+#content-wrapper .mui--divider-top {
+  padding-top: 15px;
+}
+
+#last-cell {
+  padding-bottom: 15px;
+}
+#qheader{
+	font-size:30px
+	
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 0px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+	

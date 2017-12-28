@@ -1,0 +1,22 @@
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script><script>
+      $(function () {
+        $("#mcq").on("submit", function (event) {
+
+event.preventDefault();// using this page stop being refreshing 
+console.log("before ajax");
+          $.ajax({
+            type: "POST",
+            url: "muimcq_eval.php",
+            data: $("#mcq").serialize(),
+            success: function (data) {
+				alert(data);
+//              document.getElementById("score").innerHTML = data;
+            }
+          });
+
+        });
+      });
+    </script>	
+			<form class="mui-form" id ="mcq">
+			 <button class="btn waves-effect waves-light" type="submit" id="submit" name="submit">Submit</button>
+			</form>

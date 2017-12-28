@@ -1,0 +1,166 @@
+<script src='http://code.jquery.com/jquery-1.9.1.js'></script><script>
+      $(function () {
+        $('#mcq').on('submit', function (event) {
+
+event.preventDefault();// using this page stop being refreshing 
+console.log('before ajax');
+          $.ajax({
+            type: 'POST',
+            url: 'muimcq_eval.php',
+            data: $('#mcq').serialize(),
+            success: function (data) {
+				alert(data);
+//              document.getElementById('score').innerHTML = data;
+            }
+          });
+
+        });
+      });
+    </script>		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		  
+			<script>
+			 $(document).ready(function(){
+				$(".collapsible").collapsible();
+			  });
+		</script>
+		
+		
+			<form class="mui-form" id ="mcq">
+			<table>
+   <tbody><tr>
+      <td>
+	  
+			<ul class="collapsible" data-collapsible="accordion">
+					<li >
+						<div class="collapsible-header">Question1     (100U1S1Q1N0001)</div>
+						<div class="collapsible-body">
+							
+		<h3>hi</h3>
+		    <input type="radio"
+             name="op1"
+             id="shujath" value="shujath">   <label for="shujath">shujath</label>
+      <br>
+      <input type="radio"
+             name="op1"
+             id="x" value="x">   <label for="x">x</label>
+      <br> 
+      <input type="radio"
+             name="op1"
+             id="ihi" value="ihi">   <label for="ihi">ihi</label>
+      <br>
+      <input type="radio"
+             name="op1"
+             id="hi" value="hi">   <label for="hi">hi</label>
+      <br>
+   
+	</div>
+		</li>
+  	</ul>
+	
+
+						  
+						</tr><tr>
+      <td>
+	  
+			<ul class="collapsible" data-collapsible="accordion">
+					<li >
+						<div class="collapsible-header">Question2     (100U1S1Q1N0002)</div>
+						<div class="collapsible-body">
+							
+		<h3>ji</h3>
+		    <input type="radio"
+             name="op2"
+             id="a" value="a">   <label for="a">a</label>
+      <br>
+      <input type="radio"
+             name="op2"
+             id="b" value="b">   <label for="b">b</label>
+      <br> 
+      <input type="radio"
+             name="op2"
+             id="c" value="c">   <label for="c">c</label>
+      <br>
+      <input type="radio"
+             name="op2"
+             id="ji" value="ji">   <label for="ji">ji</label>
+      <br>
+   
+	</div>
+		</li>
+  	</ul>
+	
+
+						  
+						</tr><tr>
+      <td>
+	  
+			<ul class="collapsible" data-collapsible="accordion">
+					<li >
+						<div class="collapsible-header">Question3     (100U1S1Q1N0003)</div>
+						<div class="collapsible-body">
+							
+		<h3>i</h3>
+		    <input type="radio"
+             name="op3"
+             id="f" value="f">   <label for="f">f</label>
+      <br>
+      <input type="radio"
+             name="op3"
+             id="e" value="e">   <label for="e">e</label>
+      <br> 
+      <input type="radio"
+             name="op3"
+             id="d" value="d">   <label for="d">d</label>
+      <br>
+      <input type="radio"
+             name="op3"
+             id="i" value="i">   <label for="i">i</label>
+      <br>
+   
+	</div>
+		</li>
+  	</ul>
+	
+
+						  
+						</tr><tr>
+      <td>
+	  
+			<ul class="collapsible" data-collapsible="accordion">
+					<li >
+						<div class="collapsible-header">Question4     (100U1S1Q1N0004)</div>
+						<div class="collapsible-body">
+							
+		<h3>pl</h3>
+		    <input type="radio"
+             name="op4"
+             id="ij" value="ij">   <label for="ij">ij</label>
+      <br>
+      <input type="radio"
+             name="op4"
+             id="ii" value="ii">   <label for="ii">ii</label>
+      <br> 
+      <input type="radio"
+             name="op4"
+             id="j" value="j">   <label for="j">j</label>
+      <br>
+      <input type="radio"
+             name="op4"
+             id="pl" value="pl">   <label for="pl">pl</label>
+      <br>
+   
+	</div>
+		</li>
+  	</ul>
+	
+
+						  
+						</tr></tbody>
+					</table>
+
+	
+		<center>
+			 <button class="btn waves-effect waves-light" type="submit" id="submit" name="submit">Submit</button>
+		</center>
+</form>

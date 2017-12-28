@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>E-LEARN | Login</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body >
+<center>
+
+    <!-- Content Header (Page header) -->
+    
+    <!-- Main content -->
+    <section class="content ">
+	
+	
+	<div class="w3-container" >
+  <h2>E-LEARN</h2>	
+  <p>UNIVERSITY LEARNING CENTER</p>
+
+  <div class="w3-card-4 " style="width:50%;">
+    <header class="w3-container  w3-green">
+      <h1 style="color:white">SIGN-IN</h1>
+    </header>
+
+    <div class="w3-container "><br>
+        <section class="content hidden-sm">
+	<form class="form-horizontal" action="login.php" method="POST">
+	
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="email">Username:</label>
+      <div class="col-sm-4">
+			<input type="text" class="form-control col-sm-12" id="user" name="user" placeholder="Enter Username" required>
+      </div>
+	</div>
+	
+	 <div class="form-group">
+      <label class="control-label col-sm-4" for="pwd">Password:</label>
+      <div class="col-sm-4">
+			<input type="password" class="form-control col-sm-12" id="pass" name="pass" placeholder="Enter Password" min="8" max="15" required>
+      </div>
+	</div>
+	
+	<div class="form-group">
+      <div class=" col-sm-12">
+        <div class="checkbox">
+          <label><input type="checkbox" > Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class=" col-sm-12 ">
+        <button type="submit" class="btn btn-info">Login</button>
+      </div>
+    </div>
+
+</form>
+		
+    </section>
+
+	</div>
+<br>
+    <footer class="w3-container w3-green">
+	
+	
+      <span style="width:15%; padding-bottom: 15px; color:white;     margin-left: 15px; padding-top: 5px;">
+	  <center> &#169; Copyright, SRM University</center>
+	  </span>
+	  	
+    </footer>
+  </div>
+</div>
+
+
+    </section>
+    <!-- /.content -->
+  
+  </center>
+</body>
+</html>
